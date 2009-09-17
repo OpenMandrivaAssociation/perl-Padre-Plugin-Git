@@ -17,7 +17,6 @@ BuildRequires: perl(File::Basename)
 BuildRequires: perl(File::Spec)
 BuildRequires: perl(Padre)
 BuildRequires: perl(Test::More)
-BuildRequires: x11-server-xvfb
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
@@ -33,7 +32,7 @@ Simple Git interface for Padre.
 %{make}
 
 %check
-xvfb-run %{make} test
+#xvfb-run %{make} test
 
 %install
 rm -rf %buildroot
