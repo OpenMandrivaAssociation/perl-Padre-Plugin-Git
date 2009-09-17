@@ -17,6 +17,7 @@ BuildRequires: perl(File::Basename)
 BuildRequires: perl(File::Spec)
 BuildRequires: perl(Padre)
 BuildRequires: perl(Test::More)
+BuildRequires: x11-server-xvfb
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
@@ -28,7 +29,7 @@ Simple Git interface for Padre.
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+xvfb-run %{__perl} Makefile.PL INSTALLDIRS=vendor
 %{make}
 
 %check
