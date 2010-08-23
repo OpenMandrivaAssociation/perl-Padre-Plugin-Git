@@ -1,5 +1,5 @@
 %define upstream_name    Padre-Plugin-Git
-%define upstream_version 0.01
+%define upstream_version 0.03
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -44,6 +44,6 @@ rm -rf %buildroot
 
 %files
 %defattr(-,root,root)
-%doc Changes README
+%doc Changes META.yml
 %{_mandir}/man3/*
 %perl_vendorlib/*
