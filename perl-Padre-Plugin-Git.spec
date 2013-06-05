@@ -2,14 +2,14 @@
 %define upstream_version 0.03
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 0.11
+Release:	1
 
 Summary:	Simple Git interface for Padre
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Padre/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Padre/Padre-Plugin-Git-0.11.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Capture::Tiny)
@@ -62,3 +62,4 @@ xvfb-run perl Makefile.PL INSTALLDIRS=vendor
 
 * Thu Sep 17 2009 cpan2dist 0.01-1mdv
 - initial mdv release, generated with cpan2dist
+
