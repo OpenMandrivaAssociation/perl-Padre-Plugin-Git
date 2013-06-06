@@ -1,6 +1,5 @@
 %define upstream_name    Padre-Plugin-Git
-%define upstream_version 0.03
-
+%define upstream_version 0.11
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.11
 Release:	1
