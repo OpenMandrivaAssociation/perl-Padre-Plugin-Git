@@ -1,15 +1,15 @@
 %define upstream_name    Padre-Plugin-Git
-%define upstream_version 0.11
+%define upstream_version 0.12
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Simple Git interface for Padre
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Padre/Padre-Plugin-Git-%{upstream_version}.tar.gz
+Url:		https://github.com/PadreIDE/Padre-Plugin-Git
+Source0:	https://cpan.metacpan.org/authors/id/B/BO/BOWTIE/Padre-Plugin-Git-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
